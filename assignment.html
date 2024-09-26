@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Tic-Tac-Toe</title>
+
+    <!-- Google Fonts integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Welcome to the Tic-Tac-Toe</h1>
+
+    <!-- Input fields for grid size and win streak -->
+    <div id="settings">
+        <div class="input-group">
+            <label for="grid-size">Grid Size (n):</label>
+            <input type="number" id="grid-size" min="3" max="10" value="3">
+        </div>
+
+        <div class="input-group">
+            <label for="win-streak">Win Streak (m):</label>
+            <input type="number" id="win-streak" min="3" value="3">
+        </div>
+
+        <div class="input-group">
+            <label for="player-x-icon">Player X Icon:</label>
+            <select id="player-x-icon">
+                <option value="😊">😊</option>
+                <option value="⭐">⭐</option>
+                <option value="🎉">🎉</option>
+                <option value="🔥">🔥</option>
+                <option value="💎">💎</option>
+                <option value="⚡">⚡</option>
+                <option value="X">X</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="player-o-icon">Player O Icon:</label>
+            <select id="player-o-icon">
+                <option value="😎">😎</option>
+                <option value="🌟">🌟</option>
+                <option value="🎈">🎈</option>
+                <option value="🌈">🌈</option>
+                <option value="💥">💥</option>
+                <option value="✨">✨</option>
+                <option value="O">O</option>
+            </select>
+        </div>
+
+        <button onclick="initializeGame()">Start Game</button>
+    </div>
+
+    <!-- The game board will be dynamically generated here -->
+    <div id="game" hidden></div>
+
+    <!-- Status message for current player and game result -->
+    <div id="status"></div>
+
+    <!-- Reset button to restart the game -->
+    <button id="reset" onclick="initializeGame()" hidden>Reset Game</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
