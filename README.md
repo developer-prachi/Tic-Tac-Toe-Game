@@ -8,5 +8,5 @@ Additional features -
 2. Added a reset game button.
 3. Added validations.
 4. Added many features that improve the game. To name a few -
-   - We will show the board and the reset button, only after user starts the game.
-   - At each stage, we display, which player turn it is.
+   - The game board and reset button are displayed only after the user starts the game.
+   - Each player's turn is clearly indicated throughout the game stages.
